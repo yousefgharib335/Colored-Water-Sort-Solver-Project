@@ -12,6 +12,6 @@ The generated report is stored at:
 
 `output/pdf/Colored_Water_Sort_Solver_Report.pdf`
 
-The current PDF is a polished draft. Before final submission, provide student
-name(s), student ID(s), confirm the responsibility split, and insert the public
+The current PDF is a polished draft containing both students' names and IDs.
+Before final submission, confirm the responsibility split and insert the public
 recorded-presentation URL. Then regenerate the report and recheck both links.

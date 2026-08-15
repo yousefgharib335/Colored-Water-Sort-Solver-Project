@@ -2,9 +2,8 @@
 
 Target duration: 8 to 9 minutes (maximum allowed: 10 minutes)
 
-Replace `Speaker A` and `Speaker B` with student names. If this is a one-student
-team, one person presents every section. If this is a two-student team, both
-students must speak.
+Speaker A is Yousef Mohamed Gharib (23P0159). Speaker B is EzzEldin Hany
+Elgezawy (23P0327). The assignment below ensures both students participate.
 
 ## 0:00-0:40 - Introduction (Speaker A)
 

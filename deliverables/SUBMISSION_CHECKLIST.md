@@ -13,7 +13,7 @@
 ## B. PDF project report
 
 - [x] Cover page drafted.
-- [ ] Add student name(s) and ID(s).
+- [x] Add student names and IDs.
 - [ ] Confirm and personalize team responsibilities.
 - [x] Explain code and file structure.
 - [x] Explain selected data structures.

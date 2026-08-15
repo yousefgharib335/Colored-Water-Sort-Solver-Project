@@ -164,10 +164,10 @@ story = []
 story += [Spacer(1, 35 * mm), P("DATA STRUCTURES AND PROBLEM SOLVING", "CoverSub"), P("Colored Water Sort<br/>Solver Project", "ReportTitle"), Spacer(1, 7 * mm), P("C++17 breadth-first search solver with a native Windows dashboard", "CoverSub"), Spacer(1, 46 * mm)]
 cover_info = [
     ["Course", "Data Structures and Problem Solving"],
-    ["Student 1", "[NAME AND ID REQUIRED]"],
-    ["Student 2", "[NAME AND ID OR N/A REQUIRED]"],
+    ["Student 1", "Yousef Mohamed Gharib - 23P0159"],
+    ["Student 2", "EzzEldin Hany Elgezawy - 23P0327"],
     ["Repository", "github.com/yousefgharib335/Colored-Water-Sort-Solver-Project"],
-    ["Report status", "Draft - student details and presentation link pending"],
+    ["Report status", "Draft - responsibility confirmation and presentation link pending"],
     ["Date", "15 August 2026"],
 ]
 ct = Table([[P(a, "CoverSub"), P(b, "CoverSub")] for a, b in cover_info], colWidths=[38 * mm, 115 * mm])
@@ -183,20 +183,20 @@ coverage = [
     ["No-solution reporting", "Frontier exhaustion returns No solution exists.", "Complete"],
     ["Sample inputs", "solvable, no_solution, and already_solved", "Complete"],
     ["GUI bonus", "src/gui_main.cpp native Windows dashboard", "Complete"],
-    ["Public repository", "Repository exists; local upload still pending", "Pending"],
+    ["Public repository", "Public GitHub repository with main branch uploaded", "Complete"],
     ["Recorded presentation", "Script prepared; recording URL needed", "Pending"],
 ]
-story += [table(coverage, [43 * mm, 91 * mm, 28 * mm]), Spacer(1, 4 * mm), P("Submission note", "Subsection"), P("The LMS submission should contain only this final PDF. Before submission, replace all red pending fields with the confirmed team information and recorded presentation URL.", "Pending"), PageBreak()]
+story += [table(coverage, [43 * mm, 91 * mm, 28 * mm]), Spacer(1, 4 * mm), P("Submission note", "Subsection"), P("The LMS submission should contain only this final PDF. Before submission, confirm the responsibility allocation and replace the remaining recorded-presentation placeholder with the final URL.", "Pending"), PageBreak()]
 
 # Responsibilities
 story += [P("2. Team Responsibilities", "Section"), P("The specification permits one or two students and requires both students to make meaningful commits and speak in the presentation when a two-person team is used. The following allocation is a practical draft and must be confirmed before submission.")]
 responsibilities = [
     ["Member", "Proposed responsibilities", "Evidence to retain"],
-    ["Student 1 - [NAME/ID]", "Console solver, BFS state search, input validation, console tests", "Multiple focused commits and test outputs"],
-    ["Student 2 - [NAME/ID or N/A]", "Windows GUI, randomized examples, report, presentation/demo preparation", "Multiple focused commits and GUI demonstration"],
+    ["Yousef Mohamed Gharib - 23P0159", "Console solver, BFS state search, input validation, console tests", "Multiple focused commits and test outputs"],
+    ["EzzEldin Hany Elgezawy - 23P0327", "Windows GUI, randomized examples, report, presentation/demo preparation", "Multiple focused commits and GUI demonstration"],
     ["Shared", "Review rules, verify minimum moves, record final demo, approve report", "Final checklist and recording"],
 ]
-story += [table(responsibilities, [40 * mm, 82 * mm, 40 * mm]), Spacer(1, 5 * mm), P("If this is a one-student project, change the table to one member and combine all responsibilities. If it is a two-student project, both accounts must contribute meaningful commits rather than one final upload.", "Pending"), P("Development scope", "Subsection")]
+story += [table(responsibilities, [40 * mm, 82 * mm, 40 * mm]), Spacer(1, 5 * mm), P("This is a two-student project. Both students must contribute meaningful GitHub commits rather than relying on one final upload from a single account.", "Pending"), P("Development scope", "Subsection")]
 story += bullets(["Required console interface: completed in src/main.cpp.", "Bonus graphical interface: completed in src/gui_main.cpp using the native Windows API.", "Testing assets: three specification-focused input files plus compiled local executables.", "Documentation: README build/run guide, this report, and a timed presentation script."]) + [PageBreak()]
 
 # Problem and design
@@ -288,10 +288,10 @@ story += [table(gui_features, [45 * mm, 117 * mm]), Spacer(1, 7 * mm), P("Limits
 
 # Build and links
 story += [P("10. Build, Run, and Submission Links", "Section"), P("Console build and run", "Subsection"), P("cmake -S . -B build<br/>cmake --build build<br/><br/>Get-Content samples/solvable.txt | .\\build\\water_sort_solver.exe", "CodeX"), P("Windows GUI build and run", "Subsection"), P("cmake -S gui -B gui/build<br/>cmake --build gui/build<br/><br/>.\\gui\\build\\water_sort_gui.exe", "CodeX"), P("GitHub repository", "Subsection"), P("<link href='https://github.com/yousefgharib335/Colored-Water-Sort-Solver-Project' color='#3B78D8'>https://github.com/yousefgharib335/Colored-Water-Sort-Solver-Project</link>"), P("Recorded presentation", "Subsection"), P("[RECORDED PRESENTATION URL REQUIRED BEFORE SUBMISSION]", "Pending"), P("Final submission checklist", "Subsection")]
-story += bullets(["Confirm student names, IDs, and responsibility allocation on the cover and Section 2.", "Ensure both students have meaningful GitHub commits if this is a two-person team.", "Make the GitHub repository public and verify it opens while signed out.", "Record a presentation of no more than 10 minutes; both students must speak when applicable.", "Insert the presentation URL into this report and verify link permissions.", "Upload only the final PDF to LMS from one team member's account."]) + [Spacer(1, 5 * mm), P("Conclusion", "Subsection"), P("The core project requirements are implemented and validated. BFS guarantees a minimum-length solution under the one-layer-per-move rule, duplicate states are avoided, and parent links reconstruct the exact move sequence. The bonus dashboard provides an accessible visual demonstration without changing the required console interface."), P("End of report", "Small")]
+story += bullets(["Confirm the proposed responsibility allocation in Section 2.", "Ensure both students have meaningful GitHub commits.", "Make the GitHub repository public and verify it opens while signed out.", "Record a presentation of no more than 10 minutes; both students must speak.", "Insert the presentation URL into this report and verify link permissions.", "Upload only the final PDF to LMS from one team member's account."]) + [Spacer(1, 5 * mm), P("Conclusion", "Subsection"), P("The core project requirements are implemented and validated. BFS guarantees a minimum-length solution under the one-layer-per-move rule, duplicate states are avoided, and parent links reconstruct the exact move sequence. The bonus dashboard provides an accessible visual demonstration without changing the required console interface."), P("End of report", "Small")]
 
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-doc = SimpleDocTemplate(str(OUTPUT), pagesize=A4, rightMargin=18 * mm, leftMargin=18 * mm, topMargin=19 * mm, bottomMargin=16 * mm, title="Colored Water Sort Solver Project Report", author="Student team - details pending", subject="Data Structures and Problem Solving project report")
+doc = SimpleDocTemplate(str(OUTPUT), pagesize=A4, rightMargin=18 * mm, leftMargin=18 * mm, topMargin=19 * mm, bottomMargin=16 * mm, title="Colored Water Sort Solver Project Report", author="Yousef Mohamed Gharib and EzzEldin Hany Elgezawy", subject="Data Structures and Problem Solving project report")
 doc.build(story, onFirstPage=cover, onLaterPages=header_footer)
 print(OUTPUT)
