@@ -21,3 +21,8 @@ Thumbs.db
 
 # Temporary report rendering files
 tmp/
+
+# Local submission materials (not part of the source repository)
+deliverables/
+output/
+Screenshot*.png
