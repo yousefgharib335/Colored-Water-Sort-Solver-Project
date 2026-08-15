@@ -1,0 +1,23 @@
+# Build products
+build/
+gui/build/
+*.exe
+*.obj
+*.o
+*.pdb
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE and operating-system files
+.vscode/
+.idea/
+*.user
+Thumbs.db
+.DS_Store
+
+# Temporary report rendering files
+tmp/
